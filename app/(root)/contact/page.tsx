@@ -1,5 +1,6 @@
 import MoreButton from "@/app/components/MoreButton"
 import Image from "next/image"
+import Link from "next/link"
 
 export default function Contact() {
     return (
@@ -48,10 +49,10 @@ export default function Contact() {
 
                         <div>
                             <p className="max-font-size-base">
-                                <a href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer">Linkedin / </a>
-                                <a href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer">Dribbble / <br/></a>
-                                <a href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer">Github / </a>
-                                <a href="">Instagram</a>
+                                <Link href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer">Linkedin / </Link>
+                                <Link href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer">Dribbble / <br/></Link>
+                                <Link href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer">Github / </Link>
+                                <Link href="">Instagram</Link>
                             </p>
                         </div>
                     </div>
@@ -64,9 +65,9 @@ export default function Contact() {
                 <p className="max-font-size-base">Designed by Manish Gurung</p>
 
                 <div className="flex gap-3 max-sm:gap-2 h-8 max-sm:h-6">
-                    <a href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-dribbble-50.png" priority={true} width={50} height={50} alt="dribbble" className="object-cover w-full h-full" /></a>
-                    <a href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-github-50.png" priority={true} width={50} height={50} alt="github" className="object-cover w-full h-full" /></a>
-                    <a href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer"><Image src="/icons8-linkedin-50.png" priority={true} width={50} height={50} alt="linkedin" className="object-cover w-full h-full" /></a>
+                    <Link href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-dribbble-50.png" priority={true} width={50} height={50} alt="dribbble" className="object-cover w-full h-full" /></Link>
+                    <Link href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-github-50.png" priority={true} width={50} height={50} alt="github" className="object-cover w-full h-full" /></Link>
+                    <Link href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer"><Image src="/icons8-linkedin-50.png" priority={true} width={50} height={50} alt="linkedin" className="object-cover w-full h-full" /></Link>
                 </div>
             </div>
             

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import MenuBar from "./Menubar";
+import Link from "next/link";
 
 const Navbar = () => {
     const [menubarState, setMenuBarState] = useState(false);
@@ -20,9 +21,9 @@ const Navbar = () => {
                 {/* Prevents hydration mismatch */}
                 {mounted && !menubarState ? (
                     <>
-                        <a href="/" className="max-md:hidden">Home</a>
-                        <a href="/work" className="max-md:hidden">Work</a>
-                        <a href="/contact" className="max-md:hidden">Contact</a>
+                        <Link href="/" className="max-md:hidden">Home</Link>
+                        <Link href="/work" className="max-md:hidden">Work</Link>
+                        <Link href="/contact" className="max-md:hidden">Contact</Link>
                     </>
                 ) : null}
                 
