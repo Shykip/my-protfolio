@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const ProjectCard = (props: { title: string, subTitle: string, stack: string[], setActiveCard: any, index: number, activeCard: any }) => {
     return (
         <div className="flex flex-col border-b-2 border-dim group mb-4 pb-4 max-md:mb-2 max-md:pb-4 cursor-pointer" onMouseEnter={() => props.setActiveCard(props.index)}>
@@ -5,7 +7,7 @@ const ProjectCard = (props: { title: string, subTitle: string, stack: string[], 
                 <p className="max-font-size-1">{props.title}</p>
                 <div className="flex items-center gap-1 max-sm:hidden">
                     <p className="max-font-size-base">Read More</p>
-                    <img src="goto-icon.png" alt="goto" className="object-contain 2xl:w-[1vw]" />
+                    <Image src="/goto-icon.png" priority={true} width={18} height={18} alt="goto" className="object-contain 2xl:w-[1vw]" />
                 </div>
             </div>
 
@@ -15,7 +17,7 @@ const ProjectCard = (props: { title: string, subTitle: string, stack: string[], 
                 <div className="flex gap-2 h-12 max-sm:h-8 pt-2">
                     {
                         props.stack.map((item, index) => (
-                            <img key={index} src={`${item}.png`} alt={`${item}`} />
+                            <Image key={index} src={`/${item}.png`} priority={true} width={50} height={50} alt={`${item}`} />
                         ))
                     }
                 </div>

@@ -1,4 +1,5 @@
 import MoreButton from "@/app/components/MoreButton"
+import Image from "next/image"
 
 export default function Contact() {
     return (
@@ -10,7 +11,7 @@ export default function Contact() {
                     <div className="flex flex-col">
 
                         <div className="w-full h-[20vh] hidden max-lg:inline-block mb-10">
-                            <img src="img3.png" alt="img3" className=" object-cover w-full h-full"/>
+                            <Image src="/img3.png" alt="img3" width={561} height={1080} priority={true} className="object-cover w-full h-full" />
                         </div>
                         <p className="max-font-size-1">Hello,</p>
                         <p className="max-font-size-sub-2 leading-[0.8] font-bold mb-12 max-md:mb-8">I'm <span className="text-highlight">Manish</span></p>
@@ -21,8 +22,8 @@ export default function Contact() {
                     <MoreButton text="Let's Discuss"/>
                 </div>
 
-                <div className="w-[26%] h-full max-h-[76vh] max-lg:hidden">
-                    <img src="img3.png" alt="img3" className=" object-cover w-full h-full"/>
+                <div className="w-[24%] h-full max-h-[76vh] max-lg:hidden">
+                    <Image src="/img3.png" width={561} height={1080} priority={true} alt="img3" className="object-cover w-full h-full" />
                 </div>
 
                 <div className="flex flex-col w-fit justify-end max-lg:justify-between">
@@ -63,9 +64,9 @@ export default function Contact() {
                 <p className="max-font-size-base">Designed by Manish Gurung</p>
 
                 <div className="flex gap-3 max-sm:gap-2 h-8 max-sm:h-6">
-                    <a href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer"><img src="icons8-dribbble-50.png" alt="dribbble" className="object-contain h-full w-full" /></a>
-                    <a href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer"><img src="icons8-github-50.png" alt="github" className="object-contain h-full w-full" /></a>
-                    <a href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer"><img src="icons8-linkedin-50.png" alt="dribbble" className="object-contain h-full w-full" /></a>
+                    <a href="https://dribbble.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-dribbble-50.png" priority={true} width={50} height={50} alt="dribbble" className="object-cover w-full h-full" /></a>
+                    <a href="https://github.com/Shykip" target="_blank" rel="noopener noreferrer"><Image src="/icons8-github-50.png" priority={true} width={50} height={50} alt="github" className="object-cover w-full h-full" /></a>
+                    <a href="https://www.linkedin.com/in/manish-gurung-b16666248/" target="_blank" rel="noopener noreferrer"><Image src="/icons8-linkedin-50.png" priority={true} width={50} height={50} alt="linkedin" className="object-cover w-full h-full" /></a>
                 </div>
             </div>
             

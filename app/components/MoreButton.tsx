@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const MoreButton = (props : {text: string}) => {
     return (
         <a 
@@ -7,8 +9,8 @@ const MoreButton = (props : {text: string}) => {
             <p className="max-font-size-base">{props.text}</p>
             {
                 props.text === "Download CV"
-                ? <img src="icons8-download-64.png" alt="goto" className="object-contain w-5 2xl:w-[1.3vw]" />
-                : <img src="goto-icon.png" alt="goto" className="object-contain w-4 2xl:w-[1vw]" />
+                ? <Image src="/icons8-download-64.png" priority={true} width={64} height={64} alt="download" className="object-contain w-5 2xl:w-[1.3vw]" />
+                : <Image src="/goto-icon.png" priority={true} width={18} height={18} alt="goto" className="object-contain w-4 2xl:w-[1vw]" />
             }
         </a>
     )

@@ -1,4 +1,5 @@
 import MoreButton from "../components/MoreButton";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -8,10 +9,10 @@ export default function Home() {
             <div className="flex flex-col w-2/3">
                 <div className="flex justify-between gap-[2vw]">
                     <div className="w-full h-[38vh] max-lg:h-[26vh] max-sm:h-[22vh]">
-                        <img src="img1.png" alt="" className="object-cover w-full h-full"/>
+                        <Image src="/img1.png" width={521} height={928} alt="img1" priority={true} className="object-cover w-full h-full" />
                     </div>
                     <div className="w-full h-[45vh] max-lg:h-[31vh] mr-[2vw] max-sm:h-[26vh]">
-                        <img src="img2.png" alt="" className="object-cover w-full h-full" />
+                        <Image src="/img2.png" width={581} height={1034} alt="img2" priority={true} className="object-cover w-full h-full" />
                     </div>
                 </div>
 
@@ -22,7 +23,7 @@ export default function Home() {
             </div>
 
             <div className="w-1/3 h-[53vh] max-lg:h-[35vh] max-sm:h-[31vh]">
-                <img src="img3.png" alt="" className="object-cover w-full h-full" />
+                <Image src="/img3.png" width={561} height={1080} alt="img3" priority={true}  className="object-cover w-full h-full" />
             </div>
         </div>
 

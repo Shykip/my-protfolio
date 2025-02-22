@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import MoreButton from "@/app/components/MoreButton"
 import ProjectCard from "@/app/components/ProjectCard"
 import { useState } from "react"
@@ -35,7 +36,7 @@ export default function Work() {
                 </div>
 
                 <div className="h-[40%] overflow-hidden max-sm:mt-10">
-                    <img src="img5.png" alt="img5" className="object-cover w-full h-full" />
+                    <Image src="/img5.png" width={901} height={459} alt="img5" priority={true} className="object-cover w-full h-full" />
                 </div>
 
             </div>
