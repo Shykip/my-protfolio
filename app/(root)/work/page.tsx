@@ -29,7 +29,7 @@ export default function Work() {
 
                 <div className="flex flex-col h-fit">
                     {
-                        projectCard.map((item: any, index: number) => (
+                        projectCard.map((item: {title: string, subTitle: string, stack: string[]}, index: number) => (
                             <ProjectCard key={index} title={item.title} subTitle={item.subTitle} stack={item.stack} setActiveCard={setActiveCard} index={index} activeCard={activeCard}/>
                         ))
                     }
