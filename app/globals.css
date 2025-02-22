@@ -2,9 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .max-font-size-base {
+    font-size: clamp(.9rem, 1vw, 10.2rem);
+  }
+  .max-font-size-1 {
+    font-size: clamp(1.5rem, 2vw, 12rem);
+  }
+  .max-font-size-sub-2 {
+    font-size: clamp(2rem, 5vw, 14rem);
+  }
+  .max-font-size-sub {
+    font-size: clamp(2rem, 6vw, 16rem);
+  }
+  .max-font-size-2 {
+    font-size: clamp(2.5rem, 7vw, 19rem);
+  }
+  .max-font-size-3 {
+    font-size: clamp(4rem, 10vw, 22rem);
+  }
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,5 +36,5 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-inter), sans-serif;
 }
