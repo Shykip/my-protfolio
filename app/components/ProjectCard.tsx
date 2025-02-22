@@ -14,10 +14,10 @@ const ProjectCard = (props: { title: string, subTitle: string, stack: string[], 
             {/* Smoothly expand/collapse subtitle */}
             <div className={`text-dim max-font-size-base transition-all duration-300 ease-in-out overflow-hidden ${props.activeCard === props.index ? "max-h-20 opacity-100" : "max-h-0 opacity-0"}`}>
                 <p>{props.subTitle}</p>
-                <div className="flex gap-2 h-12 max-sm:h-8 pt-2">
+                <div className="flex gap-2 h-12 max-sm:h-10 max-sm:gap-0 pt-2">
                     {
                         props.stack.map((item, index) => (
-                            <Image key={index} src={`/${item}.png`} priority={true} width={50} height={50} alt={`${item}`} />
+                            <Image key={index} className="object-contain" src={`/${item}.png`} priority={true} width={50} height={50} alt={`${item}`} />
                         ))
                     }
                 </div>
