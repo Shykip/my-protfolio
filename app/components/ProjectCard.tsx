@@ -6,7 +6,7 @@ const ProjectCard = (props: { title: string, subTitle: string, stack: string[], 
             <div className="flex justify-between">
                 <p className="max-font-size-1">{props.title}</p>
                 <div className="flex items-center gap-1 max-sm:hidden">
-                    <p className="max-font-size-base">Read More</p>
+                    <p className="max-font-size-base text-nowrap">Read More</p>
                     <Image src="/goto-icon.png" priority={true} width={18} height={18} alt="goto" className="object-contain 2xl:w-[1vw]" />
                 </div>
             </div>
