@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <div className="flex flex-col w-full justify-between h-[88vh] max-sm:h-fit">
 
-            <div className="flex w-full gap-24 max-lg:gap-10 max-sm:flex-col max-sm:gap-12 h-full mb-5 max-sm:pb-8">
+            <div className="flex justify-between w-full gap-24 max-lg:gap-10 max-sm:flex-col max-sm:gap-12 h-full mb-5 max-sm:pb-8">
 
                 <div className="flex flex-col w-[36%] max-lg:w-full justify-between">
                     <div className="flex flex-col">
@@ -23,11 +23,7 @@ export default function Contact() {
                     <MoreButton text="Let's Discuss"/>
                 </div>
 
-                <div className="w-[24%] h-full max-h-[76vh] max-lg:hidden">
-                    <Image src="/img3.png" width={561} height={1080} priority={true} alt="img3" className="object-cover w-full h-full" />
-                </div>
-
-                <div className="flex flex-col w-fit justify-end max-lg:justify-between">
+                <div className="flex flex-col w-fit justify-between max-lg:justify-between">
 
                     <div className="flex flex-col w-full mb-48 max-sm:mb-20">
 
@@ -57,6 +53,10 @@ export default function Contact() {
                         </div>
                     </div>
                     <MoreButton text="Download CV" />
+                </div>
+
+                <div className="w-[24%] h-full max-h-[76vh] max-lg:hidden">
+                    <Image src="/img3.png" width={561} height={1080} priority={true} alt="img3" className="object-cover w-full h-full" />
                 </div>
 
             </div>
