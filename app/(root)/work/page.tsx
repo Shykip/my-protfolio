@@ -20,7 +20,7 @@ export default function Work() {
             <div className="flex flex-col w-2/5 justify-between max-md:w-full max-md:mb-14">
                 <div className="flex flex-col gap-8">
                     <p className="max-font-size-sub font-bold leading-[1]">FEATURED<br className="max-md:hidden"/> WORK</p>
-                    <p className="max-font-size-base w-4/5 max-md:w-full mb-10">Olive studio brings your vision to life with stunning designs that reverberate through time, creating waves of creativity and success for you brand.</p>
+                    <p className="max-font-size-base w-4/5 max-md:w-full mb-10">Love bringing vision to life with stunning designs that reverberate through time, creating waves of creativity and success for you brand.</p>
                 </div>
                 <MoreButton text="Let's Discuss"/>
             </div>
